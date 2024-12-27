@@ -1,4 +1,19 @@
-# Uniswap : Documentation Complète
+# Uniswap : Documentation
+
+# Sommaire
+
+1. [Introduction](#introduction)
+2. [Versions de Uniswap](#versions-de-uniswap)  
+   2.1 [Uniswap V1](#uniswap-v1)  
+   2.2 [Uniswap V2](#uniswap-v2)  
+   2.3 [Uniswap V3](#uniswap-v3)  
+3. [Cas d'utilisation d'Uniswap](#cas-dutilisation-duniswap)
+4. [Pourquoi Uniswap est utile pour la communauté blockchain](#pourquoi-uniswap-est-utile-pour-la-communauté-blockchain)
+5. [Qu'est-ce qui rend Uniswap spécial ?](#quest-ce-qui-rend-uniswap-spécial)
+6. [Défis et limitations](#défis-et-limitations)
+7. [Conclusion](#conclusion)
+8. [Références](#références)
+
 
 ## Introduction
 Uniswap est un protocole d'échange décentralisé (DEX) construit sur la blockchain Ethereum. Il permet aux utilisateurs d'échanger des tokens ERC-20 sans avoir besoin d'un intermédiaire centralisé, offrant ainsi une expérience de trading entièrement décentralisée.
