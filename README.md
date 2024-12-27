@@ -14,6 +14,7 @@
 7. [Conclusion](#conclusion)
 8. [Références](#références)
 
+---
 
 ## Introduction
 Uniswap est un protocole d'échange décentralisé (DEX) construit sur la blockchain Ethereum. Il permet aux utilisateurs d'échanger des tokens ERC-20 sans avoir besoin d'un intermédiaire centralisé, offrant ainsi une expérience de trading entièrement décentralisée.
