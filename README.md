@@ -6,7 +6,7 @@
 2. [Versions de Uniswap](#versions-de-uniswap)  
 3. [Cas d'utilisation d'Uniswap](#cas-dutilisation-duniswap)  
 4. [Pourquoi Uniswap est utile pour la communauté blockchain](#pourquoi-uniswap-est-utile-pour-la-communauté-blockchain)  
-5. [Pourquoi Uniswap](#pourquoi-uniswap)  
+5. [Comment fonctionne Uniswap](#comment-fonctionne-uniswap)  
 6. [AMM](#amm)
 7. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
 8. [Avantages de l'AMM d'Uniswap](#avantages-de-lamm-duniswap)  
@@ -82,7 +82,7 @@ Uniswap est devenu une pierre angulaire de l'écosystème DeFi, offrant :
 
 ---
 
-## Pourquoi Uniswap
+## Comment fonctionne Uniswap
 
 1. **Modèle de Market Maker Automatisé :**
    - Uniswap remplace les carnets d'ordres traditionnels par des pools de liquidité, permettant aux échanges de se produire sans correspondance directe entre acheteurs et vendeurs.
