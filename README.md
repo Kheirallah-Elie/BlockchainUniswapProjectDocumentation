@@ -93,6 +93,10 @@ L'objectif principal d'Uniswap est de permettre l'échange décentralisé de tok
      - **Pertes impermanentes :** Une baisse significative du prix d'un token peut entraîner des pertes potentielles.
      - **Volatilité du marché :** Les pools exposés à des actifs volatils peuvent être sujets à des fluctuations de valeur.
 
+***Illustration des utilisateurs UNISWAP :***
+
+![Alt text](https://docs.uniswap.org/assets/images/anatomy-d22fb7ab46013a1195f086ee672468c7.jpg)
+[Source: How Uniswap works](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works)
 
 ---
 
@@ -109,7 +113,6 @@ Uniswap est devenu une pierre angulaire de l'écosystème DeFi, offrant :
 
 ## Comment fonctionne Uniswap
 
-![Alt text](https://docs.uniswap.org/assets/images/anatomy-d22fb7ab46013a1195f086ee672468c7.jpg)
 
 1. **Modèle de Market Maker Automatisé :**
    - Uniswap remplace les carnets d'ordres traditionnels par des pools de liquidité, permettant aux échanges de se produire sans correspondance directe entre acheteurs et vendeurs.
