@@ -69,6 +69,31 @@ L'objectif principal d'Uniswap est de permettre l'échange décentralisé de tok
 3. **Intégration DeFi :** Base pour de nombreux protocoles de finance décentralisée, y compris les plateformes de prêt, le yield farming et les produits dérivés.
 4. **Découverte des prix :** Facilite la découverte des prix de manière transparente et en temps réel pour les tokens.
 
+##### Il y'a 2 types d'utilisateurs :
+
+1. **Traders :**
+   - **Description :** Les traders utilisent Uniswap pour échanger des tokens ERC-20 de manière rapide, fluide et sans permission. Ils bénéficient d'une accessibilité constante, même pour des tokens peu liquides ou nouveaux.
+   - **Avantages pour les traders :**
+     - Pas besoin de créer de compte ni de fournir des informations personnelles.
+     - Échange direct depuis leur portefeuille Ethereum.
+     - Accès à une large gamme de tokens, y compris ceux qui ne sont pas encore disponibles sur des plateformes centralisées.
+     - Résilience face aux restrictions des bourses centralisées.
+     - Découverte de prix efficace grâce aux pools de liquidité.
+   - **Cas d'utilisation spécifiques :**
+     - Arbitrage : Profiter des différences de prix entre Uniswap et d'autres plateformes.
+     - Trading de niche : Investir dans des tokens émergents ou à faible capitalisation.
+
+2. **Fournisseurs de liquidité (LPs) :**
+   - **Description :** Les fournisseurs de liquidité déposent des paires de tokens (par exemple, ETH et USDT) dans les pools de liquidité d’Uniswap. En retour, ils gagnent une part des frais générés par les transactions réalisées via le pool.
+   - **Avantages pour les LPs :**
+     - Générer des revenus passifs grâce aux frais de trading (généralement 0,3 % par transaction).
+     - Possibilité de concentrer leur liquidité (V3) dans des plages de prix spécifiques pour maximiser les rendements.
+     - Diversification des actifs en profitant de leurs paires sur Uniswap.
+   - **Risques à considérer :**
+     - **Pertes impermanentes :** Une baisse significative du prix d'un token peut entraîner des pertes potentielles.
+     - **Volatilité du marché :** Les pools exposés à des actifs volatils peuvent être sujets à des fluctuations de valeur.
+
+
 ---
 
 ## Pourquoi Uniswap est utile pour la communauté blockchain
