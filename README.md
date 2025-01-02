@@ -109,6 +109,8 @@ Uniswap est devenu une pierre angulaire de l'écosystème DeFi, offrant :
 
 ## Comment fonctionne Uniswap
 
+![Alt text](https://docs.uniswap.org/assets/images/anatomy-d22fb7ab46013a1195f086ee672468c7.jpg)
+
 1. **Modèle de Market Maker Automatisé :**
    - Uniswap remplace les carnets d'ordres traditionnels par des pools de liquidité, permettant aux échanges de se produire sans correspondance directe entre acheteurs et vendeurs.
    - Les prix sont déterminés algorithmiquement en utilisant la formule du produit constant : \( x \times y = k \), où \( x \) et \( y \) sont les réserves du pool, et \( k \) est une constante. 
@@ -240,5 +242,4 @@ En supprimant les barrières traditionnelles et en favorisant un écosystème De
 - [What is an Automated Market Maker? (Liquidity Pool Algorithm)](https://www.youtube.com/watch?v=1PbZMudPP5E)
 - [What is a Liquidity Pool in Crypto? (Animated)](https://www.youtube.com/watch?v=dVJzcFDo498&t=19s)
 - [What is DeFi? (Decentralized Finance Animated)](https://www.youtube.com/watch?v=17QRFlml4pA&t=618s)
-
 
