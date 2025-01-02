@@ -206,3 +206,14 @@ En supprimant les barrières traditionnelles et en favorisant un écosystème De
 - [Documentation Uniswap](https://docs.uniswap.org)
 - [Fondation Ethereum](https://ethereum.org)
 - [DeFi Pulse - Uniswap](https://defipulse.com/uniswap)
+- [How Uniswap is changing the DEX space](https://liquidityfinder.com/insight/crypto/how-uniswap-is-changing-the-dex-space)
+- [How Uniswap works](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works)
+
+##### Vidéos YouTube interessantes et bien expliquées :
+- [What is Uniswap - A Beginner's Guide (2024 Updated)](https://www.youtube.com/watch?v=dIneNZTnFMw)
+- [What is Uniswap? (Animated) Decentralized Exchange + UNI Token](https://www.youtube.com/watch?v=DLu35sIqVTM&t=306s)
+- [What is an Automated Market Maker? (Liquidity Pool Algorithm)](https://www.youtube.com/watch?v=1PbZMudPP5E)
+- [What is a Liquidity Pool in Crypto? (Animated)](https://www.youtube.com/watch?v=dVJzcFDo498&t=19s)
+- [What is DeFi? (Decentralized Finance Animated)](https://www.youtube.com/watch?v=17QRFlml4pA&t=618s)
+
+
