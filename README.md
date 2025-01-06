@@ -238,6 +238,7 @@ En supprimant les barrières traditionnelles et en favorisant un écosystème De
 - [DeFi Pulse - Uniswap](https://defipulse.com/uniswap)
 - [How Uniswap is changing the DEX space](https://liquidityfinder.com/insight/crypto/how-uniswap-is-changing-the-dex-space)
 - [How Uniswap works](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works)
+- [What is ERC-20?](https://www.coinbase.com/learn/crypto-glossary/what-is-erc-20)
 
 ##### Vidéos YouTube interessantes et bien expliquées :
 - [What is Uniswap - A Beginner's Guide (2024 Updated)](https://www.youtube.com/watch?v=dIneNZTnFMw)
