@@ -7,9 +7,9 @@
 3. [Cas d'utilisation d'Uniswap](#cas-dutilisation-duniswap)  
 4. [Pourquoi Uniswap est utile pour la communauté blockchain](#pourquoi-uniswap-est-utile-pour-la-communauté-blockchain)  
 5. [Comment fonctionne Uniswap](#comment-fonctionne-uniswap)  
-6. [AMM](#amm)
-7. [Exemple détaillé de l'AMM](#exemple-détaillé-de-lamm)
-8. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
+6. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
+7. [AMM](#amm)
+8. [Exemple détaillé de l'AMM](#exemple-détaillé-de-lamm)
 9. [Avantages de l'AMM d'Uniswap](#avantages-de-lamm-duniswap)  
 10. [Défis et limitations](#défis-et-limitations)  
 11. [Conclusion](#conclusion)  
@@ -133,7 +133,21 @@ Uniswap est devenu une pierre angulaire de l'écosystème DeFi, offrant :
    - Les frais sont entièrement distribués aux LPs, favorisant un écosystème inclusif.
 
 ---
+## Fonctionnement des Pools de Liquidité
 
+### Dépôts de liquidité
+Les utilisateurs (appelés **fournisseurs de liquidité**) déposent deux actifs dans un ratio équivalent (en valeur) dans un pool. En retour, ils reçoivent des **jetons LP (Liquidity Provider)** qui représentent leur part du pool.
+
+### Transactions
+Lorsqu'un utilisateur échange un actif contre un autre via Uniswap, il interagit avec le pool de liquidité :
+- L'actif donné est ajouté au pool.
+- L'actif reçu est retiré du pool.
+- Le prix est ajusté automatiquement en fonction de la formule \( x \times y = k \) utilisant la technologie [AMM](#amm).
+
+### Incitations pour les fournisseurs de liquidité
+Les fournisseurs de liquidité gagnent une part des frais de transaction (généralement 0,3%) collectés sur chaque échange.
+
+---
 ## AMM
 
 Un AMM est un protocole décentralisé qui permet de négocier des crypto-monnaies directement depuis des contrats intelligents (smart contracts). Contrairement aux bourses traditionnelles qui utilisent un carnet d'ordres (order book), un AMM fonctionne grâce à des **pools de liquidités** (liquidity pools).
@@ -220,22 +234,6 @@ La relation entre les deux actifs peut être représentée par une hyperbole dé
 - Cela garantit qu'un actif ne peut jamais être totalement épuisé, sauf si quelqu'un paie une valeur infinie pour le retirer.
 
 Ce mécanisme est au cœur de la technologie des AMM, comme celle utilisée dans **Uniswap**.
-
----
-
-## Fonctionnement des Pools de Liquidité
-
-### Dépôts de liquidité
-Les utilisateurs (appelés **fournisseurs de liquidité**) déposent deux actifs dans un ratio équivalent (en valeur) dans un pool. En retour, ils reçoivent des **jetons LP (Liquidity Provider)** qui représentent leur part du pool.
-
-### Transactions
-Lorsqu'un utilisateur échange un actif contre un autre via Uniswap, il interagit avec le pool de liquidité :
-- L'actif donné est ajouté au pool.
-- L'actif reçu est retiré du pool.
-- Le prix est ajusté automatiquement en fonction de la formule \( x \times y = k \).
-
-### Incitations pour les fournisseurs de liquidité
-Les fournisseurs de liquidité gagnent une part des frais de transaction (généralement 0,3%) collectés sur chaque échange.
 
 ---
 
