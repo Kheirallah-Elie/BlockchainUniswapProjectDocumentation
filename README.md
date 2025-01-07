@@ -1,4 +1,5 @@
-# Uniswap : Documentation
+# Uniswap : Documentation - Projet BlockChain - Bac 3
+
 
 # Sommaire
 
@@ -7,9 +8,9 @@
 3. [Cas d'utilisation d'Uniswap](#cas-dutilisation-duniswap)  
 4. [Pourquoi Uniswap est utile pour la communauté blockchain](#pourquoi-uniswap-est-utile-pour-la-communauté-blockchain)  
 5. [Comment fonctionne Uniswap](#comment-fonctionne-uniswap)  
-6. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
-7. [AMM](#amm)
-8. [Exemple détaillé de l'AMM](#exemple-détaillé-de-lamm)
+6. [AMM](#amm)
+7. [Exemple détaillé de l'AMM](#exemple-détaillé-de-lamm)
+8. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
 9. [Avantages de l'AMM d'Uniswap](#avantages-de-lamm-duniswap)  
 10. [Défis et limitations](#défis-et-limitations)  
 11. [Conclusion](#conclusion)  
@@ -18,9 +19,10 @@
 ---
 
 ## Introduction
-**Uniswap** est un protocole d'échange décentralisé (DEX) construit sur la blockchain Ethereum. Il permet aux utilisateurs d'échanger des tokens `ERC-20` (ensemble de règles que les tokens doivent suivre pour être compatibles avec l'écosystème Ethereum, y compris les portefeuilles, les contrats intelligents, et les échanges décentralisés comme Uniswap) sans avoir besoin d'un intermédiaire centralisé, offrant ainsi une expérience de trading entièrement **décentralisée** dans un [pool de liquidité](#fonctionnement-des-pools-de-liquidité) .
+**Uniswap** est un protocole d'échange décentralisé construit sur la blockchain Ethereum, qui permet aux utilisateurs d'échanger des tokens `ERC-20` (ensemble de règles que les tokens doivent suivre pour être compatibles avec l'écosystème Ethereum, y compris les portefeuilles, les Smart Contrats (contrats intelligents), et les échanges décentralisés comme Uniswap) sans avoir besoin d'un intermédiaire centralisé, offrant ainsi une expérience de trading entièrement **décentralisée** dans un [pool de liquidité](#fonctionnement-des-pools-de-liquidité) .
 
 **Uniswap** utilise un modèle de [**Market Maker Automatisé (AMM)**](#amm), où la liquidité est fournie par des utilisateurs qui mettent en commun leurs fonds dans des contrats intelligents. Les transactions sont exécutées directement contre ces pools de liquidité au lieu de se baser sur des carnets d'ordres traditionnels.
+**Uniswap** bénéficie donc de [2 types d'utilisateurs distincts](#cas-dutilisation-duniswap).
 
 ---
 
@@ -31,7 +33,7 @@
 **Caractéristiques principales :**
 - **Appariement de token unique :** Chaque pool de liquidité dans Uniswap V1 associe un token ERC-20 avec de l'ETH. Par exemple, pour échanger du DAI contre du USDC, un utilisateur doit d'abord échanger du DAI contre de l'ETH, puis de l'ETH contre du USDC.
 - **Simplicité :** Une mise en œuvre simple du modèle AMM.
-- **Limitations :** Absence de paires d'échange directes entre ERC-20 et glissement relativement élevé.
+- **Limitations :** Absence de paires d'échange directes entre ERC-20 et slippage (glissement) relativement élevé.
 
 ### Uniswap V2
 **Date de sortie :** Mai 2020  
@@ -63,17 +65,16 @@ Plus d'informations devraient être disponibles lorsque la version sera annoncé
 ---
 
 ## Cas d'utilisation d'Uniswap
-L'objectif principal d'Uniswap est de permettre l'échange décentralisé de tokens. Il prend en charge :
 
-1. **Échange de tokens :** Trading fluide et sans permission de tokens ERC-20.
-2. **Fourniture de liquidité :** Les utilisateurs peuvent gagner des frais en contribuant aux pools de liquidité.
-3. **Intégration DeFi :** Base pour de nombreux protocoles de finance décentralisée, y compris les plateformes de prêt, le yield farming et les produits dérivés.
-4. **Découverte des prix :** Facilite la découverte des prix de manière transparente et en temps réel pour les tokens.
+1. Trading fluide, et **sans permission**, de tokens ERC-20.
+2. Les investisseurs peuvent gagner des frais en contribuant aux pools de liquidité.
+3. Intégration **DeFi** : Base pour de nombreux protocoles de **finance décentralisée**.
+4. Facilite la découverte des prix de manière transparente et en temps réel pour les tokens.
 
-##### Il y'a 2 types d'utilisateurs :
+#### Deux types d'utilisateurs distincts :
 
 1. **Traders :**
-   - **Description :** Les traders utilisent Uniswap pour échanger des tokens ERC-20 de manière rapide, fluide et sans permission. Ils bénéficient d'une accessibilité constante, même pour des tokens peu liquides ou nouveaux.
+   - **Description :** Les traders utilisent Uniswap pour échanger des tokens ERC-20 de manière rapide, et sans permission. Ils bénéficient d'une accessibilité constante, même pour des tokens peu liquides ou nouveaux ([attention aux tokens scam!](#défis-et-limitations) ).
    - **Avantages pour les traders :**
      - Pas besoin de créer de compte ni de fournir des informations personnelles.
      - Échange direct depuis leur portefeuille Ethereum.
@@ -93,6 +94,7 @@ L'objectif principal d'Uniswap est de permettre l'échange décentralisé de tok
    - **Risques à considérer :**
      - **Pertes impermanentes :** Une baisse significative du prix d'un token peut entraîner des pertes potentielles.
      - **Volatilité du marché :** Les pools exposés à des actifs volatils peuvent être sujets à des fluctuations de valeur.
+     [Plus de détails ici](#défis-et-limitations) 
 
 ***Illustration des utilisateurs UNISWAP :***
 
@@ -102,13 +104,12 @@ L'objectif principal d'Uniswap est de permettre l'échange décentralisé de tok
 ---
 
 ## Pourquoi Uniswap est utile pour la communauté blockchain
-Uniswap est devenu une pierre angulaire de l'écosystème DeFi, offrant :
+Uniswap est devenu important dans l'écosystème ETC, qui permet :
 
-1. **Décentralisation :** L'élimination des intermédiaires garantit une plus grande transparence et confiance.
-2. **Accessibilité ouverte :** Tout le monde peut échanger des tokens ou créer des pools de liquidité sans restrictions.
-3. **Favorisation de l'innovation :** Sert de plateforme pour tester et lancer de nouveaux tokens et projets DeFi.
-4. **Résilience :** Fonctionne sans interruption ni dépendance à une infrastructure centralisée.
-5. **Propriété communautaire :** La gouvernance est décentralisée, avec des décisions prises collectivement par les détenteurs de tokens UNI.
+1. L'élimination des intermédiaires, ce qui garantit une plus grande transparence et confiance.
+2. À tout le monde d'échanger des tokens ou créer des pools de liquidité sans aucune restriction ou permission.
+3. De servir de plateforme pour tester et lancer de nouveaux tokens et projets DeFi.
+4. Une gouvernance décentralisée, avec des décisions prises collectivement par les détenteurs de tokens UNI.
 
 ---
 
@@ -116,30 +117,27 @@ Uniswap est devenu une pierre angulaire de l'écosystème DeFi, offrant :
 
 
 1. **Modèle de Market Maker Automatisé :**
-   - Uniswap remplace les carnets d'ordres traditionnels par des pools de liquidité, permettant aux échanges de se produire sans correspondance directe entre acheteurs et vendeurs.
-   - Les prix sont déterminés algorithmiquement en utilisant la formule du produit constant : \( x \times y = k \), où \( x \) et \( y \) sont les réserves du pool, et \( k \) est une constante. 
-   [Plus en détails dans le point prochain.](#amm)  
+   - Uniswap remplace les carnets d'ordres traditionnels par des pools de liquidité, permettant aux échanges de se produire **sans correspondance directe entre acheteurs et vendeurs.**
+   - Les prix sont déterminés **algorithmiquement** en utilisant la formule du produit constant : \( x \times y = k \), où \( x \) et \( y \) sont les réserves du pool, et \( k \) est une constante. 
+   [Plus détaillé dans le point prochain.](#amm)  
 
-2. **Conception sans permission :**
-   - Tout le monde peut lister un token ou fournir de la liquidité sans approbation ni restrictions.
-
-3. **Efficacité du capital (V3) :**
+2. **Efficacité du capital (V3) :**
    - La liquidité concentrée permet aux LPs d'allouer leurs fonds plus efficacement, maximisant les rendements tout en réduisant les pertes impermanentes.
 
-4. **Architecture composable :**
+3. **Architecture composable :**
    - S'intègre parfaitement à d'autres protocoles DeFi, permettant des opérations financières complexes telles que l'arbitrage, le prêt et la création d'actifs synthétiques.
 
-5. **Modèle de frais transparent :**
+4. **Modèle de frais transparent :**
    - Les frais sont entièrement distribués aux LPs, favorisant un écosystème inclusif.
 
 ---
 ## Fonctionnement des Pools de Liquidité
 
 ### Dépôts de liquidité
-Les utilisateurs (appelés **fournisseurs de liquidité**) déposent deux actifs dans un ratio équivalent (en valeur) dans un pool. En retour, ils reçoivent des **jetons LP (Liquidity Provider)** qui représentent leur part du pool.
+Les **investisseurs** (appelés **fournisseurs de liquidité**) déposent deux actifs dans un ratio équivalent (en valeur) dans un pool. En retour, ils reçoivent des **jetons LP (Liquidity Provider)** qui représentent leur part du pool.
 
 ### Transactions
-Lorsqu'un utilisateur échange un actif contre un autre via Uniswap, il interagit avec le pool de liquidité :
+Lorsqu'un **trader** échange un actif contre un autre via Uniswap, il interagit avec le pool de liquidité :
 - L'actif donné est ajouté au pool.
 - L'actif reçu est retiré du pool.
 - Le prix est ajusté automatiquement en fonction de la formule \( x \times y = k \) utilisant la technologie [AMM](#amm).
@@ -159,7 +157,7 @@ Un AMM est un protocole décentralisé qui permet de négocier des crypto-monnai
 
 #### La Formule Mathématique : \( x \times y = k \)
 
-Uniswap utilise une formule simple mais puissante pour déterminer les prix des actifs dans un pool :
+Uniswap utilise une formule simple, mais puissante, pour déterminer les prix des actifs dans un pool :
 
 \[
 x \times y = k
@@ -170,7 +168,7 @@ x \times y = k
 - **\( y \)** : Quantité de l'actif B (par exemple, USDT) dans le pool.
 - **\( k \)** : Une constante qui reste inchangée (sauf en cas de modification du pool).
 
-Cette formule garantit que le produit des quantités des deux actifs reste constant après chaque transaction. Cela signifie qu'au fur et à mesure qu'un actif est acheté, son prix augmente en raison de la diminution de sa disponibilité relative.
+Cette formule garantit que le produit des quantités des deux actifs reste constant après chaque transaction. Cela signifie qu'au fur et à mesure qu'un actif est acheté, son prix augmente en raison de la diminution de sa disponibilité relative. Exemple détaillé dans le prochain chapitre.
 
 ---
 
@@ -223,8 +221,6 @@ Pour maintenir `k = 20 000`, le système ajuste `x` :
 
 L'utilisateur ajoute donc **102.04 - 101 = 1.04 pommes** au pool pour récupérer ses 2 pommes de terre.
 
-
-
 ##### La formule clé : `x * y = k` assure un équilibre constant, mais introduit également une dépendance des prix basée sur les quantités relatives des actifs.
 
 #### Visualisation de la courbe de prix
@@ -241,7 +237,7 @@ Ce mécanisme est au cœur de la technologie des AMM, comme celle utilisée dans
 
 1. **Décentralisation totale** : Les utilisateurs gardent le contrôle de leurs fonds.
 2. **Liquidité continue** : Pas besoin de contreparties actives pour exécuter des ordres.
-3. **Simplicité et automatisation** : Les prix sont calculés automatiquement en temps réel.
+3. **Simplicité et automatisation** : Les prix sont calculés automatiquement, et en temps réel.
 
 ---
 
@@ -309,3 +305,11 @@ En supprimant les barrières traditionnelles et en favorisant un écosystème De
 - [What is a Liquidity Pool in Crypto? (Animated)](https://www.youtube.com/watch?v=dVJzcFDo498&t=19s)
 - [What is DeFi? (Decentralized Finance Animated)](https://www.youtube.com/watch?v=17QRFlml4pA&t=618s)
 
+---
+
+### Auteurs:
+Elie Kheirallah
+John Yazbeck
+Alain Nitunga Michel
+
+Fait le `07-01-2025`
