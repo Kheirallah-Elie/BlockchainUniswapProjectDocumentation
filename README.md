@@ -8,18 +8,19 @@
 4. [Pourquoi Uniswap est utile pour la communauté blockchain](#pourquoi-uniswap-est-utile-pour-la-communauté-blockchain)  
 5. [Comment fonctionne Uniswap](#comment-fonctionne-uniswap)  
 6. [AMM](#amm)
-7. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
-8. [Avantages de l'AMM d'Uniswap](#avantages-de-lamm-duniswap)  
-9. [Défis et limitations](#défis-et-limitations)  
-10. [Conclusion](#conclusion)  
-11. [Références](#références) 
+7. [Exemple détaillé de l'AMM](#exemple-détaillé-de-lamm)
+8. [Fonctionnement des Pools de Liquidité](#fonctionnement-des-pools-de-liquidité)  
+9. [Avantages de l'AMM d'Uniswap](#avantages-de-lamm-duniswap)  
+10. [Défis et limitations](#défis-et-limitations)  
+11. [Conclusion](#conclusion)  
+12. [Références](#références) 
 
 ---
 
 ## Introduction
-**Uniswap** est un protocole d'échange décentralisé (DEX) construit sur la blockchain Ethereum. Il permet aux utilisateurs d'échanger des tokens ERC-20 sans avoir besoin d'un intermédiaire centralisé, offrant ainsi une expérience de trading entièrement **décentralisée**.
+**Uniswap** est un protocole d'échange décentralisé (DEX) construit sur la blockchain Ethereum. Il permet aux utilisateurs d'échanger des tokens `ERC-20` (ensemble de règles que les tokens doivent suivre pour être compatibles avec l'écosystème Ethereum, y compris les portefeuilles, les contrats intelligents, et les échanges décentralisés comme Uniswap) sans avoir besoin d'un intermédiaire centralisé, offrant ainsi une expérience de trading entièrement **décentralisée** dans un [pool de liquidité](#fonctionnement-des-pools-de-liquidité) .
 
-**Uniswap** utilise un modèle de **Market Maker Automatisé (AMM)**, où la liquidité est fournie par des utilisateurs qui mettent en commun leurs fonds dans des contrats intelligents. Les transactions sont exécutées directement contre ces pools de liquidité au lieu de se baser sur des carnets d'ordres traditionnels.
+**Uniswap** utilise un modèle de [**Market Maker Automatisé (AMM)**](#amm), où la liquidité est fournie par des utilisateurs qui mettent en commun leurs fonds dans des contrats intelligents. Les transactions sont exécutées directement contre ces pools de liquidité au lieu de se baser sur des carnets d'ordres traditionnels.
 
 ---
 
@@ -156,6 +157,69 @@ x \times y = k
 - **\( k \)** : Une constante qui reste inchangée (sauf en cas de modification du pool).
 
 Cette formule garantit que le produit des quantités des deux actifs reste constant après chaque transaction. Cela signifie qu'au fur et à mesure qu'un actif est acheté, son prix augmente en raison de la diminution de sa disponibilité relative.
+
+---
+
+## Exemple détaillé de l'AMM
+
+Supposons qu’un fournisseur de liquidité crée un pool contenant :
+
+- 100 pommes (`x = 100`),
+- 200 pommes de terre (`y = 200`).
+
+La constante est donc calculée comme suit :  
+`k = x * y = 100 * 200 = 20 000`.
+
+#### Échange d'une pomme contre des pommes de terre
+Un utilisateur veut échanger **1 pomme** contre des pommes de terre.  
+Le système AMM utilise la formule pour maintenir la constante `k`.
+
+#### Avant l'échange :
+- `x = 100` (pommes dans le pool),
+- `y = 200` (pommes de terre dans le pool),
+- `k = 20 000`.
+
+L'utilisateur ajoute 1 pomme au pool, ce qui fait passer la quantité de pommes à `x = 101`.  
+Pour maintenir `k = 20 000`, le système doit ajuster `y` :
+
+`x' * y' = k 101 * y' = 20 000 y' = 20 000 / 101 ≈ 198.02`
+
+
+Ainsi, après l'échange :
+- Le pool contient désormais `x = 101` pommes,
+- Le pool contient `y = 198.02` pommes de terre.
+
+L'utilisateur reçoit donc **200 - 198.02 = 1.98 pommes de terre** en échange de sa pomme.
+
+#### Impact :
+Cet échange illustre la courbe de prix non linéaire propre aux AMM : plus l'utilisateur ajoute ou retire des actifs, plus l'impact sur le prix est grand (slippage).
+
+#### Échange de pommes de terre contre des pommes
+Un autre utilisateur veut maintenant échanger **2 pommes de terre** contre des pommes.
+
+#### Avant l'échange :
+- `x = 101`,
+- `y = 198.02`.
+
+L'utilisateur retire 2 pommes de terre du pool, ce qui fait passer `y` à `196.02`.  
+Pour maintenir `k = 20 000`, le système ajuste `x` :
+
+`x' * y' = k x' * 196.02 = 20 000 x' = 20 000 / 196.02 ≈ 102.04`
+
+
+L'utilisateur ajoute donc **102.04 - 101 = 1.04 pommes** au pool pour récupérer ses 2 pommes de terre.
+
+
+
+##### La formule clé : `x * y = k` assure un équilibre constant, mais introduit également une dépendance des prix basée sur les quantités relatives des actifs.
+
+#### Visualisation de la courbe de prix
+La relation entre les deux actifs peut être représentée par une hyperbole décrivant la formule `x * y = k`. Par exemple :
+
+- Lorsque l'un des actifs diminue fortement, l'autre augmente en prix de manière exponentielle.
+- Cela garantit qu'un actif ne peut jamais être totalement épuisé, sauf si quelqu'un paie une valeur infinie pour le retirer.
+
+Ce mécanisme est au cœur de la technologie des AMM, comme celle utilisée dans **Uniswap**.
 
 ---
 
